@@ -7,8 +7,15 @@
 //   reverse('Greetings!') === '!sgniteerG'
 
 function reverse(str) {
-  
+  let a = '';
+
+  for (let x of str) {
+    a = x + a;
+    debugger;
+  }return a;
 }
+
+reverse('dcba');
 module.exports = reverse;
 
 
