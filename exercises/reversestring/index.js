@@ -24,8 +24,11 @@ module.exports = reverse;
 // *************************************
 // THIRD SOLUTION:
 // *************************************
+// // Below solution uses ES5 syntax...
 
-
+// function reverse(str) {
+//     return str.split('').reduce((rev, char) => char + rev, '');
+// }
 
 
 // *************************************
@@ -34,7 +37,7 @@ module.exports = reverse;
 // SECOND SOLUTION:
 // *************************************
 // for loop, we are going to create an
-// empty string called "reversed"..
+// empty string called "reversed".. uses "for of" loop -> style, instead of "for()" loop -> style
 //
 // let a = '';
 //
