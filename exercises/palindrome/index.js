@@ -14,3 +14,13 @@ function palindrome(str) {
 module.exports = palindrome;
 
 
+
+
+//*** First Solution ***
+
+
+//*** Second Solution ***
+
+
+//*** Third Solution ***
+
