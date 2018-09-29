@@ -8,12 +8,12 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-function reverseInt(str) {
-    let reversed = '';
-    for(let x of str) {
-        reversed = x + reversed;
-    }
-    return reversed;
+function reverseInt(n) {
+    const reversed = n
+        .toString()
+        .split('')
+        .reverse()
+        .join();
 }
 
 
