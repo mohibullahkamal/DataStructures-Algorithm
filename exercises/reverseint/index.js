@@ -14,6 +14,8 @@ function reverseInt(n) {
         .split('')
         .reverse()
         .join();
+        
+    return parseInt(reversed);
 }
 
 
