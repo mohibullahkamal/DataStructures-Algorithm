@@ -8,32 +8,36 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
-  let reversed = '';
-  let string = str;
   
-  for(let x of str) {
-    reversed = x + reversed;
-  }
-  
-  if(reversed == string){
-    return true;
-  } else {
-    return false;
-  }
 }
 
 module.exports = palindrome;
 
 
 
-// //*** First Solution ***
+// //****** MY Solution *********************
+// function palindrome(str) {
+//   let reversed = '';
+//   let string = str;
+  
+//   for(let x of str) {
+//     reversed = x + reversed;
+//   }
+  
+//   if(reversed == string){
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+
+// //****** First Solution *******************
 // function palindrome(str) {   // Most easy solution... but interviewer might not be conviced...
 //   const reversed = str.split('').reverse().join('');
 //   return reversed === str;
 // }
 
-//*** Second Solution ***
+//****** Second Solution *********************
 
-
-//*** Third Solution ***
 
