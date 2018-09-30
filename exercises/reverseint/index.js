@@ -21,7 +21,6 @@ function reverseInt(n) {
     return parseInt(reversed);
 }
 
-
 module.exports = reverseInt;
 
 //*** First Solution *******************

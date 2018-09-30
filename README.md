@@ -1,6 +1,6 @@
 # PracticeAlgo
 
- 1. String Reversal
+#### 1. String Reversal
  ```javascript
 function reverse(str) {
  let reverved = '';
@@ -10,8 +10,15 @@ function reverse(str) {
  return reversed;
 } 
  ```
+OR ES5 version:
+```javascript
+function reverse(str) {
+    return str.split('').reduce((rev, char) => char + rev, '');
+}
+```
  
- 2. Palindromes
- 3. Integer Reversal
+#### 2. Palindromes
+
+#### 3. Integer Reversal
  
 

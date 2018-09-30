@@ -24,7 +24,7 @@ module.exports = reverse;
 // *************************************
 // THIRD SOLUTION:
 // *************************************
-// // Below solution uses ES5 syntax...
+// // Below solution uses ES5 syntax... "reduce()" helper function was introduced in ES5.1 to reduce all different values in an ARRAY and condense them all to one singular value... "reduce()" takes two separate arguments... the first one is gonna be an arrow function; second one is gonna be a starting argument...
 
 // function reverse(str) {
 //     return str.split('').reduce((rev, char) => char + rev, '');
