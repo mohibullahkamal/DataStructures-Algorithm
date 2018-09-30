@@ -18,6 +18,22 @@ function reverse(str) {
 ```
  
 #### 2. Palindromes
+```javascript
+function palindrome(str) {
+  let reversed = '';
+  let string = str;
+  
+  for(let x of str) {
+    reversed = x + reversed;
+  }
+  
+  if(reversed == string){
+    return true;
+  } else {
+    return false;
+  }
+}
+```
 
 #### 3. Integer Reversal
  

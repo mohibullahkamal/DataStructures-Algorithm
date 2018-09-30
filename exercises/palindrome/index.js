@@ -14,7 +14,6 @@ function palindrome(str) {
 module.exports = palindrome;
 
 
-
 // //****** MY Solution *********************
 // function palindrome(str) {
 //   let reversed = '';
@@ -31,11 +30,13 @@ module.exports = palindrome;
 //   }
 // }
 
-
 // //****** First Solution *******************
 // function palindrome(str) {   // Most easy solution... but interviewer might not be conviced...
-//   const reversed = str.split('').reverse().join('');
-//   return reversed === str;
+//   const reversed = str
+//     .split('')
+//     .reverse()
+//     .join('');
+//   return str === reversed;
 // }
 
 //****** Second Solution *********************
