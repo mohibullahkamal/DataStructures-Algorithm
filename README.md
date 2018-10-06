@@ -1,6 +1,6 @@
 # PracticeAlgo
 
-#### 1. String Reversal
+## 1. String Reversal
  ```javascript
 function reverse(str) {
  let reverved = '';
@@ -17,7 +17,7 @@ function reverse(str) {
 }
 ```
  
-#### 2. Palindromes
+## 2. Palindromes
 ```javascript
 function palindrome(str) {
   let reversed = '';
@@ -35,7 +35,7 @@ function palindrome(str) {
 }
 ```
 
-#### 3. Integer Reversal
+## 3. Integer Reversal
 ```javascript
 function reverseInt(n) {
     const reversed = n
@@ -50,7 +50,7 @@ function reverseInt(n) {
     return parseInt(reversed);
 }
 ```
-OR using "Math.sign()" to get rid of conditional statement.
+OR using "Math.sign()" instead of conditional statement
 ```javascript
 function reverseInt(n) {
     const reversed = n
@@ -62,7 +62,7 @@ function reverseInt(n) {
     return parseInt(reversed) * Math.sign(n);
 }
 ```
-OR ONE LINE SOLUTION
+OR one line solution...
 ```javascript
 function reverseInt(n) {
     return (parseInt(n.toString().split('').reverse().join(''))) * Math.sign();
@@ -70,32 +70,32 @@ function reverseInt(n) {
 ```
 
 
-#### 4. MaxChars 
+## 4. MaxChars 
 ```javascript
 
 ```
 
-#### 5. FizzBuzz
+## 5. FizzBuzz
 ```javascript
 
 ```
 
-#### 6. Array Chunking 
+## 6. Array Chunking 
 ```javascript
 
 ```
 
-#### 7. Anagrams 
+## 7. Anagrams 
 ```javascript
 
 ```
 
-#### 8. Sentence Capitalization 
+## 8. Sentence Capitalization 
 ```javascript
 
 ```
 
-####  9. Printing Steps
+##  9. Printing Steps
 ```javascript
 
 ```
