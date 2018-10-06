@@ -13,10 +13,10 @@ function reverseInt(n) {
         .toString()
         .split('')
         .reverse()
-        .join();
-        
-    if (n < 0){
-        return parseInt(reversed) - 1;
+        .join('');
+
+    if (n < 0) {
+        return parseInt(reversed) * -1;
     }
     return parseInt(reversed);
 }
@@ -26,6 +26,10 @@ module.exports = reverseInt;
 
 
 // //*** First Solution *******************
+// 3 tricks --> 1. parseInt();   // parseInt takes a string and returns a number
+//              2. toString(); 
+//              3. math.sign()
+
 // function reverseInt(n) {
 //     const reversed = n
 //         .toString()
@@ -34,7 +38,7 @@ module.exports = reverseInt;
 //         .join();
         
 //     if (n < 0){
-//         return parseInt(reversed) - 1;    // parseInt takes a string and returns a number
+//         return parseInt(reversed) - 1;    
 //     }
 //     return parseInt(reversed);
 // }
