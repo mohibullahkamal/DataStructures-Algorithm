@@ -9,19 +9,19 @@
 //   reverseInt(-90) === -9
 
 function reverseInt(n) {
-    const reversed = n
-        .toString()
-        .split('')
-        .reverse()
-        .join('');
-
-    if (n < 0) {
-        return parseInt(reversed) * -1;
-    }
-    return parseInt(reversed);
+    return (
+        parseInt(
+            n
+            .toString()
+            .split('')
+            .reverse()
+            .join('')
+        ) * Math.sign(n)
+    );
 }
 
 module.exports = reverseInt;
+
 
 
 
@@ -35,10 +35,29 @@ module.exports = reverseInt;
 //         .toString()
 //         .split('')
 //         .reverse()
-//         .join();
-        
-//     if (n < 0){
-//         return parseInt(reversed) - 1;    
+//         .join('');
+
+//     if (n < 0) {
+//         return parseInt(reversed) * -1;
 //     }
 //     return parseInt(reversed);
 // }
+
+
+// //*** Second Solution ********************
+// function reverseInt(n) {
+//     const reversed = n
+//         .toString()
+//         .split('')
+//         .reverse()
+//         .join('');
+
+//     return parseInt(reversed) * Math.sign(n);
+// }
+
+
+// //*** ONE LINE SOLUTION ********************
+// function reverseInt(n) {
+//     return (parseInt(n.toString().split('').reverse().join(''))) * Math.sign();
+// }
+
