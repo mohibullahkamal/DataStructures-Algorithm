@@ -34,7 +34,7 @@ module.exports = reverseInt;
 //         .join();
         
 //     if (n < 0){
-//         return parseInt(reversed) - 1;
+//         return parseInt(reversed) - 1;    // parseInt takes a string and returns a number
 //     }
 //     return parseInt(reversed);
 // }

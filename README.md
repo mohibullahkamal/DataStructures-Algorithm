@@ -36,5 +36,5 @@ function palindrome(str) {
 ```
 
 #### 3. Integer Reversal
- 
+
 
