@@ -7,6 +7,9 @@
 
 function maxChar(str) {
     const charMap = {};
+    let max = 0;
+    let maxChar = '';
+    
     
     for (let char of str) {
         if (charMap[char]++) {
@@ -15,7 +18,7 @@ function maxChar(str) {
             charMap[char] = 1;
         }
     }
-    console.log(charMap);
+
 }
 
 module.exports = maxChar;

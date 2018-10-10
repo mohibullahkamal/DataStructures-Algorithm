@@ -78,6 +78,14 @@ Other common questions could be:
 - Does string A have the same characters as string B (is it an anagram)?
 - Does the given string have any repeated characters in it?
 
+Hello -->
+{
+    H: 1,
+    e: 1,
+    l: 2,
+    o: 1
+}
+
 ## 5. FizzBuzz
 ```javascript
 
