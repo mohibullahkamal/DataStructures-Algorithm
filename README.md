@@ -107,6 +107,14 @@ Hello -->
 }
 
 ## 5. FizzBuzz
+Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
+eg: 
+fizzBuzz(5); 
+1   
+2   
+fizz   
+4   
+buzz
 ```javascript
 
 ```
