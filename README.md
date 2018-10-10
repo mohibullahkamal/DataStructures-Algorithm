@@ -71,7 +71,27 @@ function reverseInt(n) {
 
 ## 4. MaxChars 
 ```javascript
-
+function maxChar(str) {
+    const charMap = {};
+    let max = 0;
+    let maxChar = '';
+    
+    
+    for (let char of str) {
+        if (charMap[char]++) {
+            charMap[char]++;
+        } else {
+            charMap[char] = 1;
+        }
+    }
+    for (let char in charMap) {
+        if (charMap[char] > max) {
+            max = charMap[char];
+            maxChar = char; 
+        }
+    }
+    return maxChar;
+}
 ```
 Other common questions could be: 
 - What is the most common character in the string?
