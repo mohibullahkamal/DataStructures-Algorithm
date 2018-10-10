@@ -98,23 +98,27 @@ Other common questions could be:
 - Does string A have the same characters as string B (is it an anagram)?
 - Does the given string have any repeated characters in it?
 
-Hello -->__
-{__
-    H: 1,__
-    e: 1,__
-    l: 2,__
-    o: 1__
-}__
+<pre>
+eg: "Hello"
+{
+    H: 1,
+    e: 1,
+    l: 2,
+    o: 1
+}
+</pre>
 
 ## 5. FizzBuzz
-Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5.__ 
-eg:__ 
-fizzBuzz(5);__
-1__
-2__   
-fizz__   
-4__
-buzz__
+Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
+<pre>
+eg: 
+fizzBuzz(5);
+1
+2   
+fizz   
+4
+buzz
+</pre>
 ```javascript
 
 ```
