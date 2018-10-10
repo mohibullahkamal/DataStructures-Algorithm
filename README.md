@@ -69,11 +69,14 @@ function reverseInt(n) {
 }
 ```
 
-
 ## 4. MaxChars 
 ```javascript
 
 ```
+Other common questions could be: 
+- What is the most common character in the string?
+- Does string A have the same characters as string B (is it an anagram)?
+- Does the given string have any repeated characters in it?
 
 ## 5. FizzBuzz
 ```javascript
@@ -99,4 +102,5 @@ function reverseInt(n) {
 ```javascript
 
 ```
+
 
