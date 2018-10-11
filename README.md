@@ -111,7 +111,7 @@ eg: "Hello"
 ## 5. FizzBuzz
 Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
 <pre>
-eg: 
+For example: 
 fizzBuzz(5);
 1
 2   
@@ -124,6 +124,10 @@ buzz
 ```
 
 ## 6. Array Chunking 
+Given an array and chunk size, divide the array into many subarrays where each subarray is of length size
+For example:
+chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
+chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
 ```javascript
 
 ```
