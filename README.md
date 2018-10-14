@@ -1,5 +1,9 @@
-# PracticeAlgo
+# **PracticeAlgo**
+### I practice Data Structures and Algorithms(in ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
+*`Full Disclosure: I follow the Awesome Udemy course by Stephen Grider (The Coding Interview Bootcamp: Algorithms/Data Structures)`*
+
+---
 
 ## 7. Anagrams 
 ```javascript
