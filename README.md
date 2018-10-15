@@ -7,16 +7,28 @@
 
 
 
-## 7. Anagrams 
+## 7. Anagrams
+Check to see if two provided strings are anagrams of eachother.
+One string is an anagram of another if it uses the same characters
+in the same quantity. Only consider characters, not spaces
+or punctuation.  Consider capital letters to be the same as lower case
+<pre>
+Examples:
+    anagrams('rail safety', 'fairy tales') --> True
+    anagrams('RAIL! SAFETY!', 'fairy tales') --> True
+    anagrams('Hi there', 'Bye there') --> False
+</pre>
 ```javascript
 
 ```
 
 ## 6. Array Chunking 
 Given an array and chunk size, divide the array into many subarrays where each subarray is of length size
-For example:
+<pre>
+Examples:
 chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
 chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
+</pre>
 
 First solution:
 ```javascript
@@ -36,7 +48,7 @@ function chunk(array, size) {
 }
 ```
 
-Using ".slice()" it a smart move...
+Using ".slice()" it's a smart move...
 Second solution:
 ```javascript
 function chunk(array, size) {
