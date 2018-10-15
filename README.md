@@ -7,7 +7,7 @@
 
 
 
-## 7. Anagrams
+## *7. Anagrams*
 Check to see if two provided strings are anagrams of eachother.
 One string is an anagram of another if it uses the same characters
 in the same quantity. Only consider characters, not spaces
@@ -25,7 +25,7 @@ Examples:
 ```
 
 
-## 6. Array Chunking 
+## *6. Array Chunking*
 Given an array and chunk size, divide the array into many subarrays where each subarray is of length size
 
 <pre>
@@ -68,7 +68,7 @@ function chunk(array, size) {
 ```
 
 
-## 5. FizzBuzz
+## *5. FizzBuzz*
 Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
 
 <pre>
@@ -86,7 +86,7 @@ buzz
 ```
 
 
-## 4. MaxChars
+## *4. MaxChars*
 
 ```javascript
 function maxChar(str) {
@@ -127,8 +127,7 @@ eg: "Hello"
 </pre>
 
 
-## 3. Integer Reversal
-
+## *3. Integer Reversal*
 ```javascript
 function reverseInt(n) {
     const reversed = n
@@ -163,7 +162,7 @@ function reverseInt(n) {
 ```
 
 
-## 2. Palindromes
+## *2. Palindromes*
 Given a string, return true if the string is a palindrome
 or false if it is not.  Palindromes are strings that
 form the same word if it is reversed. *Do* include spaces
@@ -176,6 +175,9 @@ Examples:
 </pre>
 
 ```javascript
+//***********************************
+//****** MY Solution ****************
+//***********************************
 function palindrome(str) {
   let reversed = '';
   let string = str;
@@ -190,10 +192,19 @@ function palindrome(str) {
     return false;
   }
 }
+//***********************************
+//****** First Solution *************
+//***********************************
+function palindrome(str) {   // Most easy solution... but interviewer might not be conviced...
+  const reversed = str
+    .split('')
+    .reverse()
+    .join('');
+  return str === reversed;
+}
 ```
 
-
-## 1. String Reversal
+## *1. String Reversal*
 Given a string, return a new string with the reversed
 order of characters
 
@@ -214,7 +225,6 @@ function reverse(str) {
     return str.split('').reduce((rev, char) => char + rev, '');
 }
 
-
 // *************************************
 // SECOND SOLUTION:
 // *************************************
@@ -228,7 +238,6 @@ function reverse(str) {
       a = x + a;
     } return a;
 }
-
 
 // *************************************
 // FIRST SOLUTION:
