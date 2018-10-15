@@ -1,12 +1,12 @@
 # **PracticeAlgo**
 #### I practice Data Structures and Algorithms(in ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
+
+
+
+
+
 ---
-
-
-
-
-
 ## *7. Anagrams*
 Check to see if two provided strings are anagrams of eachother.
 One string is an anagram of another if it uses the same characters
@@ -24,7 +24,7 @@ Examples:
 
 ```
 
-
+---
 ## *6. Array Chunking*
 Given an array and chunk size, divide the array into many subarrays where each subarray is of length size
 
@@ -67,12 +67,12 @@ function chunk(array, size) {
 }
 ```
 
-
+---
 ## *5. FizzBuzz*
 Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
 
 <pre>
-For example: 
+Examples: 
 fizzBuzz(5);
 1
 2   
@@ -85,7 +85,7 @@ buzz
 
 ```
 
-
+---
 ## *4. MaxChars*
 
 ```javascript
@@ -126,7 +126,7 @@ eg: "Hello"
 }
 </pre>
 
-
+---
 ## *3. Integer Reversal*
 ```javascript
 function reverseInt(n) {
@@ -161,7 +161,7 @@ function reverseInt(n) {
 }
 ```
 
-
+---
 ## *2. Palindromes*
 Given a string, return true if the string is a palindrome
 or false if it is not.  Palindromes are strings that
@@ -204,6 +204,7 @@ function palindrome(str) {   // Most easy solution... but interviewer might not 
 }
 ```
 
+---
 ## *1. String Reversal*
 Given a string, return a new string with the reversed
 order of characters
@@ -261,7 +262,8 @@ function reverse(str) {
  return str.split('').reverse().join('');
 
 ```
- 
+
+---
 
 
 
