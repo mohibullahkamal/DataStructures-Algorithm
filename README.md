@@ -136,7 +136,26 @@ eg: "Hello"
 
 ---
 ## *3. Integer Reversal*
+Given an integer, return an integer that is the reverse
+ordering of numbers.
+
+<pre>
+Examples
+  reverseInt(15) === 51
+  reverseInt(981) === 189
+  reverseInt(500) === 5
+  reverseInt(-15) === -51
+  reverseInt(-90) === -9
+</pre>
+
 ```javascript
+//***********************************
+//****** First Solution *************
+//***********************************
+// 3 tricks --> 1. parseInt();   // parseInt takes a string and returns a number
+//              2. toString(); 
+//              3. math.sign()
+
 function reverseInt(n) {
     const reversed = n
         .toString()
@@ -152,6 +171,9 @@ function reverseInt(n) {
 ```
 OR using "Math.sign()" instead of conditional statement
 ```javascript
+//***********************************
+//****** Second Solution *************
+//***********************************
 function reverseInt(n) {
     const reversed = n
         .toString()
@@ -164,6 +186,9 @@ function reverseInt(n) {
 ```
 OR one line solution...
 ```javascript
+//***********************************
+//****** One line Solution **********
+//***********************************
 function reverseInt(n) {
     return (parseInt(n.toString().split('').reverse().join(''))) * Math.sign();
 }
@@ -226,7 +251,7 @@ Examples:
 
  ```javascript
 // *************************************
-// THIRD SOLUTION:
+// ******** THIRD SOLUTION *************
 // *************************************
 // Below solution uses ES5 syntax... "reduce()" helper function was introduced in ES5.1 to reduce all different values in an ARRAY and condense them all to one singular value... "reduce()" takes two separate arguments... the first one is gonna be an arrow function; second one is gonna be a starting argument...
 
@@ -235,7 +260,7 @@ function reverse(str) {
 }
 
 // *************************************
-// SECOND SOLUTION:
+// ******** SECOND SOLUTION ************
 // *************************************
 // for loop, we are going to create an
 // empty string called "reversed".. uses "for of" loop -> style, instead of "for()" loop -> style
@@ -249,7 +274,7 @@ function reverse(str) {
 }
 
 // *************************************
-// FIRST SOLUTION:
+// ***** FIRST SOLUTION ****************
 // *************************************
 // we break the string into array, then reverse it, then
 // remake the array into a string..
