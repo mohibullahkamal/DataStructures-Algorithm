@@ -99,6 +99,9 @@ Examples:
 </pre>
 
 ```javascript
+//***********************************
+//****** First Solution *************
+//***********************************
 function maxChar(str) {
     const charMap = {};
     let max = 0;
