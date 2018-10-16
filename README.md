@@ -34,8 +34,25 @@ Examples:
     chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
 </pre>
 
-First solution:
 ```javascript
+//***********************************
+//****** Second Solution ************
+//***********************************
+// Using ".slice()" it's a smart move...
+function chunk(array, size) {
+    const chunked = [];
+    let index = 0;
+    
+    while (index < array.length) {
+        chunked.push(array.slice(index, index + size));
+        index += size;
+    }
+    return chunked;
+}
+
+//***********************************
+//****** First Solution *************
+//***********************************
 function chunk(array, size) {
     const chunked = [];
     
@@ -52,20 +69,6 @@ function chunk(array, size) {
 }
 ```
 
-Using ".slice()" it's a smart move...
-Second solution:
-```javascript
-function chunk(array, size) {
-    const chunked = [];
-    let index = 0;
-    
-    while (index < array.length) {
-        chunked.push(array.slice(index, index + size));
-        index += size;
-    }
-    return chunked;
-}
-```
 
 ---
 ## *5. FizzBuzz*
@@ -140,7 +143,7 @@ Given an integer, return an integer that is the reverse
 ordering of numbers.
 
 <pre>
-Examples
+Examples:
   reverseInt(15) === 51
   reverseInt(981) === 189
   reverseInt(500) === 5
@@ -253,7 +256,10 @@ Examples:
 // *************************************
 // ******** THIRD SOLUTION *************
 // *************************************
-// Below solution uses ES5 syntax... "reduce()" helper function was introduced in ES5.1 to reduce all different values in an ARRAY and condense them all to one singular value... "reduce()" takes two separate arguments... the first one is gonna be an arrow function; second one is gonna be a starting argument...
+// Below solution uses ES5 syntax... "reduce()" helper function was introduced in ES5.1 to reduce 
+// all different values in an ARRAY and condense them all to one singular value... "reduce()" takes 
+// two separate arguments... the first one is gonna be an arrow function; second one is gonna be a 
+// starting argument...
 
 function reverse(str) {
     return str.split('').reduce((rev, char) => char + rev, '');
@@ -283,7 +289,8 @@ function reverse(str) {
 // don't cheat by using the reverse() helper...
 
 function reverse(str) {
-    var arr = str.split('');   // when we pass ('') empty string... it takes the provided string and turns each character in the "str" to array... 
+    var arr = str.split('');   // when we pass ('') empty string... it takes the provided string 
+                               // and turns each character in the "str" to array... 
     arr.reverse();   //This will reverse all character in the array
     var reversed = arr.join('');   //This will join back all string
     return reversed;
