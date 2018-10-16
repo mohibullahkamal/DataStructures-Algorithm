@@ -35,24 +35,9 @@ Examples:
 </pre>
 
 ```javascript
-//***********************************
-//****** Second Solution ************
-//***********************************
-// Using ".slice()" it's a smart move...
-function chunk(array, size) {
-    const chunked = [];
-    let index = 0;
-    
-    while (index < array.length) {
-        chunked.push(array.slice(index, index + size));
-        index += size;
-    }
-    return chunked;
-}
-
-//***********************************
-//****** First Solution *************
-//***********************************
+// ***********************************
+// ****** First Solution *************
+// ***********************************
 function chunk(array, size) {
     const chunked = [];
     
@@ -67,8 +52,22 @@ function chunk(array, size) {
     }
    return chunked; 
 }
-```
 
+// ***********************************
+// ****** Second Solution ************
+// ***********************************
+// Using ".slice()" it's a smart move...
+function chunk(array, size) {
+    const chunked = [];
+    let index = 0;
+    
+    while (index < array.length) {
+        chunked.push(array.slice(index, index + size));
+        index += size;
+    }
+    return chunked;
+}
+```
 
 ---
 ## *5. FizzBuzz*
@@ -152,9 +151,9 @@ Examples:
 </pre>
 
 ```javascript
-//***********************************
-//****** First Solution *************
-//***********************************
+// ***********************************
+// ****** First Solution *************
+// ***********************************
 // 3 tricks --> 1. parseInt();   // parseInt takes a string and returns a number
 //              2. toString(); 
 //              3. math.sign()
@@ -174,9 +173,9 @@ function reverseInt(n) {
 ```
 OR using "Math.sign()" instead of conditional statement
 ```javascript
-//***********************************
-//****** Second Solution *************
-//***********************************
+// ***********************************
+// ****** Second Solution *************
+// ***********************************
 function reverseInt(n) {
     const reversed = n
         .toString()
@@ -189,9 +188,9 @@ function reverseInt(n) {
 ```
 OR one line solution...
 ```javascript
-//***********************************
-//****** One line Solution **********
-//***********************************
+// ***********************************
+// ****** One line Solution **********
+// ***********************************
 function reverseInt(n) {
     return (parseInt(n.toString().split('').reverse().join(''))) * Math.sign();
 }
@@ -211,9 +210,9 @@ Examples:
 </pre>
 
 ```javascript
-//***********************************
-//****** MY Solution ****************
-//***********************************
+// ***********************************
+// ****** MY Solution ****************
+// ***********************************
 function palindrome(str) {
   let reversed = '';
   let string = str;
@@ -228,9 +227,9 @@ function palindrome(str) {
     return false;
   }
 }
-//***********************************
-//****** First Solution *************
-//***********************************
+// ***********************************
+// ****** First Solution *************
+// ***********************************
 function palindrome(str) {   // Most easy solution... but interviewer might not be conviced...
   const reversed = str
     .split('')
@@ -252,33 +251,7 @@ Examples:
   reverse('Greetings!') === '!sgniteerG'
 </pre>
 
- ```javascript
-// *************************************
-// ******** THIRD SOLUTION *************
-// *************************************
-// Below solution uses ES5 syntax... "reduce()" helper function was introduced in ES5.1 to reduce 
-// all different values in an ARRAY and condense them all to one singular value... "reduce()" takes 
-// two separate arguments... the first one is gonna be an arrow function; second one is gonna be a 
-// starting argument...
-
-function reverse(str) {
-    return str.split('').reduce((rev, char) => char + rev, '');
-}
-
-// *************************************
-// ******** SECOND SOLUTION ************
-// *************************************
-// for loop, we are going to create an
-// empty string called "reversed".. uses "for of" loop -> style, instead of "for()" loop -> style
-
-function reverse(str) {
-    let a = '';
-    
-    for (let x of str) {
-      a = x + a;
-    } return a;
-}
-
+```javascript
 // *************************************
 // ***** FIRST SOLUTION ****************
 // *************************************
@@ -298,9 +271,33 @@ function reverse(str) {
 
 // lets write the above code in a shorter manner..
 // we dont really need temp var "arr"..
+return str.split('').reverse().join('');
+ 
+// *************************************
+// ******** SECOND SOLUTION ************
+// *************************************
+// for loop, we are going to create an
+// empty string called "reversed".. uses "for of" loop -> style, instead of "for()" loop -> style
 
- return str.split('').reverse().join('');
+function reverse(str) {
+    let a = '';
+    
+    for (let x of str) {
+      a = x + a;
+    } return a;
+}
 
+// *************************************
+// ******** THIRD SOLUTION *************
+// *************************************
+// Below solution uses ES5 syntax... "reduce()" helper function was introduced in ES5.1 to reduce 
+// all different values in an ARRAY and condense them all to one singular value... "reduce()" takes 
+// two separate arguments... the first one is gonna be an arrow function; second one is gonna be a 
+// starting argument...
+
+function reverse(str) {
+    return str.split('').reduce((rev, char) => char + rev, '');
+}
 ```
 
 ---
