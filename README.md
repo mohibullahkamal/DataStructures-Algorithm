@@ -20,13 +20,13 @@ return the capitalized string.
 // ****** First Solution *************
 // ***********************************
 function capitalize(str) {
-  let result = str[0].toUpperCase();
+  let result = str[0].toUpperCase();       // always start with capitalizing first letter in a sentence
 
-  for (let i = 1; i < str.length; i++) {
-    if (str[i - 1] === ' ') {
+  for (let i = 1; i < str.length; i++) {   // loop through given string
+    if (str[i - 1] === ' ') {              // If blank space found, then increase array pointer by one and capitalize it
       result += str[i].toUpperCase();
     } else {
-      result += str[i];
+      result += str[i];                    // else keep moving forward in array
     }
   }
 
