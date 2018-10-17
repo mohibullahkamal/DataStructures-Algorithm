@@ -2,7 +2,7 @@
 #### I practice Data Structures and Algorithms(in ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
 
-
+---
 ## 8. Sentence Capitalization 
 Write a function that accepts a string.  The function should
 capitalize the first letter of each word in the string then
@@ -13,10 +13,38 @@ return the capitalized string.
   capitalize('a short sentence') --> 'A Short Sentence'
   capitalize('a lazy fox') --> 'A Lazy Fox'
   capitalize('look, it is working!') --> 'Look, It Is Working!'
-  </pre>
+</pre>
   
 ```javascript
+// ***********************************
+// ****** First Solution *************
+// ***********************************
+function capitalize(str) {
+  let result = str[0].toUpperCase();
 
+  for (let i = 1; i < str.length; i++) {
+    if (str[i - 1] === ' ') {
+      result += str[i].toUpperCase();
+    } else {
+      result += str[i];
+    }
+  }
+
+  return result;
+}
+
+// ***********************************
+// ****** Second Solution ************
+// ***********************************
+function capitalize(str) {
+  const words = [];
+
+  for (let word of str.split(' ')) {
+    words.push(word[0].toUpperCase() + word.slice(1));
+  }
+
+  return words.join(' ');
+}
 ```
 
 ---
@@ -27,7 +55,7 @@ in the same quantity. Only consider characters, not spaces
 or punctuation.  Consider capital letters to be the same as lower case
 
 <pre>
-Examples:
+--- Examples
     anagrams('rail safety', 'fairy tales') --> True
     anagrams('RAIL! SAFETY!', 'fairy tales') --> True
     anagrams('Hi there', 'Bye there') --> False
@@ -86,7 +114,7 @@ function cleanString(str) {
 Given an array and chunk size, divide the array into many subarrays where each subarray is of length size
 
 <pre>
-Examples:
+--- Examples
     chunk([1, 2, 3, 4], 2) --> [[ 1, 2], [3, 4]]
     chunk([1, 2, 3, 4, 5], 2) --> [[ 1, 2], [3, 4], [5]]
 </pre>
@@ -131,7 +159,7 @@ function chunk(array, size) {
 Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
 
 <pre>
-Examples: 
+--- --- Examples
 fizzBuzz(5);
 1
 2   
@@ -167,7 +195,7 @@ Given a string, return the character that is most
 commonly used in the string.
 
 <pre>
-Examples:
+--- Examples
     maxChar("abcccccccd") === "c"
     maxChar("apple 1231111") === "1"
 </pre>
@@ -219,7 +247,7 @@ Given an integer, return an integer that is the reverse
 ordering of numbers.
 
 <pre>
-Examples:
+--- Examples
   reverseInt(15) === 51
   reverseInt(981) === 189
   reverseInt(500) === 5
@@ -281,7 +309,7 @@ form the same word if it is reversed. *Do* include spaces
 and punctuation in determining if the string is a palindrome.
 
 <pre>
-Examples:
+--- Examples
   palindrome("abba") === true
   palindrome("abcdefg") === false
 </pre>
@@ -322,7 +350,7 @@ Given a string, return a new string with the reversed
 order of characters
 
 <pre>
-Examples:
+--- Examples
   reverse('apple') === 'leppa'
   reverse('hello') === 'olleh'
   reverse('Greetings!') === '!sgniteerG'
