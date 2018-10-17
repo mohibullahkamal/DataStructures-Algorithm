@@ -3,6 +3,10 @@
 
 
 
+## 8. Sentence Capitalization 
+```javascript
+
+```
 ---
 ## *7. Anagrams*
 Check to see if two provided strings are anagrams of eachother.
@@ -365,10 +369,6 @@ function reverse(str) {
 
 
 
-## 8. Sentence Capitalization 
-```javascript
-
-```
 
 ##  9. Printing Steps
 ```javascript
