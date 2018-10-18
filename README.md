@@ -2,6 +2,31 @@
 #### I practice Data Structures and Algorithms(in ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
 
+##  9. Printing Steps
+Write a function that accepts a positive number N.
+The function should console log a step shape
+with N levels using the # character.  Make sure the
+step has spaces on the right hand side!
+
+<pre>
+--- Examples
+  steps(2)
+      '# '
+      '##'
+  steps(3)
+      '#  '
+      '## '
+      '###'
+  steps(4)
+      '#   '
+      '##  '
+      '### '
+      '####'
+</pre>      
+      
+```javascript
+
+```
 ---
 ## 8. Sentence Capitalization 
 Write a function that accepts a string.  The function should
@@ -409,11 +434,6 @@ function reverse(str) {
 
 
 
-
-##  9. Printing Steps
-```javascript
-
-```
 
 ## 10. Two sided steps = Pyramids
 ```javascript
