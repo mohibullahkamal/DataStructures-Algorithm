@@ -25,6 +25,25 @@ step has spaces on the right hand side!
 </pre>      
       
 ```javascript
+// ***********************************
+// ****** First Solution *************
+// ***********************************
+function steps(n) {
+  for (let row = 0; row < n; row++) {
+    let stair = '';
+
+    for (let column = 0; column < n; column++) {
+      if (column <= row) {
+        stair += '#';
+      } else {
+        stair += ' ';
+      }
+    }
+
+    console.log(stair);
+  }
+}
+
 
 ```
 ---
