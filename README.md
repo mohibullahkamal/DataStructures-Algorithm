@@ -2,6 +2,15 @@
 #### I practice Data Structures and Algorithms(in ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
 
+
+
+---
+## 10. Two sided steps = Pyramids
+
+```javascript
+
+```
+---
 ##  9. Printing Steps
 Write a function that accepts a positive number N.
 The function should console log a step shape
@@ -468,11 +477,6 @@ function reverse(str) {
 
 
 
-
-## 10. Two sided steps = Pyramids
-```javascript
-
-```
 
 ## 11. Find the Vowels
 ```javascript
