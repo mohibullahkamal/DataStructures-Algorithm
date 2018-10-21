@@ -17,6 +17,9 @@ used in a string.  Vowels are the characters 'a', 'e'
 </pre>
 
 ```javascript
+// ***********************************
+// ****** First Solution *************
+// ***********************************
 function vowels(str) {
   let count = 0;
   const checker = ['a', 'e', 'i', 'o', 'u'];
@@ -30,7 +33,9 @@ function vowels(str) {
   return count;
 }
 
-
+// ***********************************
+// ****** Second Solution ************
+// ***********************************
 function vowels(str) {
   const matches = str.match(/[aeiou]/gi);
   return matches ? matches.length : 0;
