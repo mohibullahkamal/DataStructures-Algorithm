@@ -6,6 +6,8 @@
 ## 12. Enter the Matrix Spiral
 Write a function that accepts an integer N
 and returns a NxN spiral matrix.
+
+<pre>
 --- Examples
   matrix(2)
     [[undefined, undefined],
@@ -19,6 +21,7 @@ and returns a NxN spiral matrix.
     [12, 13, 14, 5],
     [11, 16, 15, 6],
     [10,  9,  8, 7]]
+</pre>
     
 ```javascript
 
