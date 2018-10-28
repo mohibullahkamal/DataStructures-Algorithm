@@ -2,7 +2,19 @@
 #### I practice Data Structures and Algorithms in Javascript(ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
 ---
-## 13. Runtime Complexity
+## 13. Runtime Complexity [Fibonacci]
+Print out the n-th entry in the fibonacci series.
+The fibonacci series is an ordering of numbers where
+each number is the sum of the preceeding two.
+For example, the sequence
+  [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+forms the first ten entries of the fibonacci series.
+
+<pre>
+Example:
+  fib(4) === 3
+</pre>  
+  
 ```javascript
 
 ```
@@ -644,12 +656,6 @@ function reverse(str) {
 ```
 ---
 
----
-## 14. Fibonacci - Runtime Complexity in practice
-```javascript
-
-```
----
 
 *`Full Disclosure: I follow the Awesome Udemy course by Stephen Grider (The Coding Interview Bootcamp: Algorithms/Data Structures). He is a great teacher and I learned a lot from his course.`*
 
