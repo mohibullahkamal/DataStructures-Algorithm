@@ -2,7 +2,7 @@
 #### I practice Data Structures and Algorithms in Javascript(ES5/ES6) everyday to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
 ---
-## 13. Runtime Complexity [Fibonacci]
+## *13. Runtime Complexity [Fibonacci]*
 Print out the n-th entry in the fibonacci series.
 The fibonacci series is an ordering of numbers where
 each number is the sum of the preceeding two.
@@ -60,7 +60,7 @@ function slowFib(n) {
 const fib = memoize(slowFib);
 ```
 ---
-## 12. Enter the Matrix Spiral
+## *12. Enter the Matrix Spiral*
 Write a function that accepts an integer N
 and returns a NxN spiral matrix.
 
@@ -130,7 +130,7 @@ function matrix(n) {
 }
 ```
 ---
-## 11. Find the Vowels
+## *11. Find the Vowels*
 Write a function that returns the number of vowels
 used in a string.  Vowels are the characters 'a', 'e'
 'i', 'o', and 'u'.
@@ -168,7 +168,7 @@ function vowels(str) {
 }
 ```
 ---
-## 10. Two sided steps = Pyramids
+## *10. Two sided steps = Pyramids*
 Write a function that accepts a positive number N.
 The function should console log a pyramid shape
 with N levels using the # character.  Make sure the
@@ -234,7 +234,7 @@ function pyramid(n, row = 0, level = '') {
 }
 ```
 ---
-##  9. Printing Steps
+##  *9. Printing Steps*
 Write a function that accepts a positive number N.
 The function should console log a step shape
 with N levels using the # character.  Make sure the
@@ -294,7 +294,7 @@ function steps(n, row = 0, stair = '') {
 }
 ```
 ---
-## 8. Sentence Capitalization 
+## *8. Sentence Capitalization*
 Write a function that accepts a string.  The function should
 capitalize the first letter of each word in the string then
 return the capitalized string.
