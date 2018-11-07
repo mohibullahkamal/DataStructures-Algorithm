@@ -450,7 +450,7 @@ function chunk(array, size) {
 Prints numbers 1 to n, where prints "fizz" for multiples of three; prints "buzz" when multiples of five; and "fizzbuzz" when multiples of both 3 and 5. 
 
 <pre>
---- --- Examples
+--- Examples
 fizzBuzz(5);
 1
 2   
