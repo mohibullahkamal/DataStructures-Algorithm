@@ -2,64 +2,6 @@
 #### I practice Data Structures and Algorithms in Javascript(ES5/ES6) regularly, to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
 ---
-## *13. Runtime Complexity [Fibonacci]*
-Print out the n-th entry in the fibonacci series.
-The fibonacci series is an ordering of numbers where
-each number is the sum of the preceeding two.
-For example, the sequence
-  [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
-forms the first ten entries of the fibonacci series.
-
-<pre>
-Example:
-  fib(4) === 3
-</pre>  
-  
-```javascript
-// ***********************************
-// ****** First Solution *************
-// ***********************************
-function fib(n) {
-  const result = [0, 1];
-
-  for (let i = 2; i <= n; i++) {
-    const a = result[i - 1];
-    const b = result[i - 2];
-
-    result.push(a + b);
-  }
-
-  return result[n];
-}
-
-// ***********************************
-// ****** Second Solution ************
-// ***********************************
-function memoize(fn) {
-  const cache = {};
-  return function(...args) {
-    if (cache[args]) {
-      return cache[args];
-    }
-
-    const result = fn.apply(this, args);
-    cache[args] = result;
-
-    return result;
-  };
-}
-
-function slowFib(n) {
-  if (n < 2) {
-    return n;
-  }
-
-  return fib(n - 1) + fib(n - 2);
-}
-
-const fib = memoize(slowFib);
-```
----
 ## *12. Enter the Matrix Spiral*
 Write a function that accepts an integer N
 and returns a NxN spiral matrix.
@@ -85,9 +27,9 @@ and returns a NxN spiral matrix.
 // ****** First Solution *************
 // ***********************************
 function matrix(n) {
-  const results = [];
+  const results = [];   //empty array created for results to be be filled once the below while loop condition is satisfied
 
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < n; i++) {   //loops until "n" user entered value is reached
     results.push([]);
   }
 
@@ -96,7 +38,7 @@ function matrix(n) {
   let endColumn = n - 1;
   let startRow = 0;
   let endRow = n - 1;
-  while (startColumn <= endColumn && startRow <= endRow) {
+  while (startColumn <= endColumn && startRow <= endRow) {   //while to check condition whether the counter has reached end point
     // Top row
     for (let i = startColumn; i <= endColumn; i++) {
       results[startRow][i] = counter;
@@ -150,7 +92,7 @@ function vowels(str) {
   let count = 0;
   const checker = ['a', 'e', 'i', 'o', 'u'];
 
-  for (let char of str.toLowerCase()) {
+  for (let char of str.toLowerCase()) {   //short way of writing for loop
     if (checker.includes(char)) {
       count++;
     }
@@ -193,7 +135,7 @@ pyramid has spaces on both the left *and* right hand sides
 // ***********************************
 
 function pyramid(n) {
-  const midpoint = Math.floor((2 * n - 1) / 2);
+  const midpoint = Math.floor((2 * n - 1) / 2);   //Math floor to find the lowest value of a selected number
 
   for (let row = 0; row < n; row++) {
     let level = '';
