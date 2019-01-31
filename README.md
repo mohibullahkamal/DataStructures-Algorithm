@@ -640,6 +640,6 @@ function reverse(str) {
 ---
 
 
-*`Full Disclosure: I follow the Awesome Udemy course by Stephen Grider (The Coding Interview Bootcamp: Algorithms/Data Structures). He is a great teacher and I learned a lot from his course.`*
+*`Note: I follow the awesome course by Stephen Grider (The Coding Interview Bootcamp: Algorithms/Data Structures). He is a great teacher and I learned a lot from his course.`*
 
 
