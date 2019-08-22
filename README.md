@@ -584,7 +584,7 @@ order of characters
 
 <pre>
 --- Examples
-  reverse('apple') === 'leppa'
+  reverse('apple') === 'elppa'
   reverse('hello') === 'olleh'
   reverse('Greetings!') === '!sgniteerG'
 </pre>
@@ -636,6 +636,7 @@ function reverse(str) {
 function reverse(str) {
     return str.split('').reduce((rev, char) => char + rev, '');
 }
+
 ```
 ---
 
