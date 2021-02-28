@@ -1,6 +1,16 @@
 # **PracticeAlgo**
 #### I practice Data Structures and Algorithms in Javascript(ES5/ES6) regularly, to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
 
+
+
+
+
+
+
+
+# **PracticeAlgo**
+#### I practice Data Structures and Algorithms in Javascript(ES5/ES6) regularly, to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
+
 ---
 ## *12. Enter the Matrix Spiral*
 Write a function that accepts an integer N
