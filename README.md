@@ -72,6 +72,101 @@ function matrix(n) {
 }
 ```
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# **PracticeAlgo**
+#### I practice Data Structures and Algorithms in Javascript(ES5/ES6) regularly, to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
+
+---
+## *12. Enter the Matrix Spiral*
+Write a function that accepts an integer N
+and returns a NxN spiral matrix.
+
+<pre>
+--- Examples
+  matrix(2)
+    [[undefined, undefined],
+    [undefined, undefined]]
+  matrix(3)
+    [[1, 2, 3],
+    [8, 9, 4],
+    [7, 6, 5]]
+  matrix(4)
+    [[1,   2,  3, 4],
+    [12, 13, 14, 5],
+    [11, 16, 15, 6],
+    [10,  9,  8, 7]]
+</pre>
+    
+```javascript
+// ***********************************
+// ****** First Solution *************
+// ***********************************
+function matrix(n) {
+  const results = [];   //empty array created for results to be be filled once the below while loop condition is satisfied
+
+  for (let i = 0; i < n; i++) {   //loops until "n" user entered value is reached
+    results.push([]);
+  }
+
+  let counter = 1;
+  let startColumn = 0;
+  let endColumn = n - 1;
+  let startRow = 0;
+  let endRow = n - 1;
+  while (startColumn <= endColumn && startRow <= endRow) {   //while to check condition whether the counter has reached end point
+    // Top row
+    for (let i = startColumn; i <= endColumn; i++) {
+      results[startRow][i] = counter;
+      counter++;
+    }
+    startRow++;
+
+    // Right column
+    for (let i = startRow; i <= endRow; i++) {
+      results[i][endColumn] = counter;
+      counter++;
+    }
+    endColumn--;
+
+    // Bottom row
+    for (let i = endColumn; i >= startColumn; i--) {
+      results[endRow][i] = counter;
+      counter++;
+    }
+    endRow--;
+
+    // start column
+    for (let i = endRow; i >= startRow; i--) {
+      results[i][startColumn] = counter;
+      counter++;
+    }
+    startColumn++;
+  }
+
+  return results;
+}
+```
+---
 ## *11. Find the Vowels*
 Write a function that returns the number of vowels
 used in a string.  Vowels are the characters 'a', 'e'
