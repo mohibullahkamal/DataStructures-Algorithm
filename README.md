@@ -21,6 +21,42 @@ and returns a NxN spiral matrix.
     [11, 16, 15, 6],
     [10,  9,  8, 7]]
 </pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+# **PracticeAlgo**
+#### I practice Data Structures and Algorithms in Javascript(ES5/ES6) regularly, to keep my logical coding skills sound. I use Jest(JS testing) to test my code for bugs, and always seek to have more than one approach to given problem.
+
+---
+## *12. Enter the Matrix Spiral*
+Write a function that accepts an integer N
+and returns a NxN spiral matrix.
+
+<pre>
+--- Examples
+  matrix(2)
+    [[undefined, undefined],
+    [undefined, undefined]]
+  matrix(3)
+    [[1, 2, 3],
+    [8, 9, 4],
+    [7, 6, 5]]
+  matrix(4)
+    [[1,   2,  3, 4],
+    [12, 13, 14, 5],
+    [11, 16, 15, 6],
+    [10,  9,  8, 7]]
+</pre>
     
 ```javascript
 // ***********************************
